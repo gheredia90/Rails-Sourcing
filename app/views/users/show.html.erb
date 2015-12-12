@@ -1,0 +1,17 @@
+<h2>User's Info</h2>
+<ul>
+	<li>Id: <%= @user.id %></li>
+	<li>Name: <%= @user.name %></li>
+	<li>Email: <%= @user.email %></li>
+</ul>
+
+
+<h2>User's Products</h2>
+<ul>
+	<% @user.products.each do |product| %>
+		<li> <%= "Id: #{product.id}, title: #{product.title}"
+			%>
+		</li>
+	<% end %>
+</ul>	
+	

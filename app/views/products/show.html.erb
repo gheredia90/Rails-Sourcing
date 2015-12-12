@@ -1,0 +1,18 @@
+<h2>Product's Info</h2>
+<ul>
+	<li>Id: <%= @product.id %></li>
+	<li>Title: <%= @product.title %></li>
+	<li>Description: <%= @product.description %></li>
+	<li>Deadline: <%= @product.deadline %></li>
+</ul>
+
+
+<h2>Product's Bids</h2>
+<ul>
+	<% @product.bids.each do |bid| %>
+		<li> <%= "Id: #{bid.id}, Amount: #{bid.amount}"
+			%>
+		</li>
+	<% end %>
+</ul>	
+	

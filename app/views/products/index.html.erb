@@ -1,0 +1,8 @@
+<div class="col-sm-12">
+<h3>Products</h3>
+	<ul><% @products.each do |product| %>
+		<li><%=product.id%>, <%= link_to product.name, product_path(product) %></li>
+		<% end %>
+	</ul>
+</div>
+
